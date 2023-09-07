@@ -53,5 +53,7 @@ if let ageString = readLine(), let userAge = Int(ageString) {
     print("Введён неккорректный формат возраста.")
 }
 
+//7
+
 
 
