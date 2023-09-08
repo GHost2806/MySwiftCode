@@ -115,19 +115,19 @@ while timer > 0  {
 //13
 
 struct User {
-    let name: String
-    let age: Int
+let name: String
+let  age: Int
 }
 
-func correction(user1: User, user2: User) -> String {
+let user1 = User(name: "Alex", age: 13)
+let user2 = User(name: "Max", age: 22)
+
+func correction(firstUser: User, secondUser: User) {
     if user1.age > user2.age {
-        return "\(user1.name) старше"
+        print("\(user1.name) страше \(user2.name)")
     } else {
-        return "\(user2.name) старше"
+        print("\(user2.name) страше \(user1.name)")
     }
 }
 
-let user1 = User(name: "Alex", age: 12)
-let user2 = User(name: "Max", age: 10)
-let ageCorrection = correction(user1: user1, user2: user2)
-print(ageCorrection)
+correction(firstUser: user1, secondUser: user2)
