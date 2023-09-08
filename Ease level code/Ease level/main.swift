@@ -54,6 +54,15 @@ if let ageString = readLine(), let userAge = Int(ageString) {
 }
 
 //7
+var myArray = [1,2,3,4,5]
+print(myArray[2])
+myArray.count
+myArray.append(3)
+myArray.insert(100, at: 3)
+myArray.remove(at: 3)
+myArray.removeFirst()
+myArray.removeLast()
+print(myArray)
 
 
 
