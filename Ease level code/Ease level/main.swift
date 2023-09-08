@@ -1,22 +1,22 @@
-//1
+//1 let/var
 let name = "Ivan"
 print(name)
 
-//2
+//2 \(age)
 let age = 22
 print("Участник \(name) c возрастом \(age) года")
 
-//3
+//3 Edit var
 var variable = 10
 variable = 12
 print(variable)
 
-//4
+//4 Edit let
 //let const = 3
 //const = 5
 //print(const)
 
-//5
+//5 If ... Else
 if let input = readLine(), let myNumber = Int(input) {
     if myNumber > 10 {
         print("Число больше  10")}
@@ -53,7 +53,7 @@ if let ageString = readLine(), let userAge = Int(ageString) {
     print("Введён неккорректный формат возраста.")
 }
 
-//7
+//7 Array
 var myArray = [1,2,3,4,5]
 print(myArray[2])
 myArray.count
@@ -74,7 +74,7 @@ var mySet: Set = [1,2,3,4] //1,2,3,4
 mySet.insert(5) //1,2,3,4,5
 mySet.insert(5) //1,2,3,4,5 (Нет изменений)
 
-//9
+//9 Guard
 func someFinc (one:Int, two:Int){
     let one = 1
     let two = 3
@@ -82,7 +82,7 @@ func someFinc (one:Int, two:Int){
     
 }
 
-//10
+//10 Switch
 
 let totalScore = 10
 switch totalScore {
@@ -99,5 +99,35 @@ default:
     
 }
 
-//11
+//11 For ... In
+let littleArray = ["Ivan": 20, "Max": 31, "Dmitri": 33, "Marina":18]
+for  (nameArray, ageArray) in littleArray {
+    print("Сотруднику \(nameArray): \(ageArray) лет")
+}
 
+//12 while/ repite...while
+var timer = 10
+while timer > 0  {
+    print(timer)
+    timer -= 1
+}
+
+//13
+
+struct User {
+    let name: String
+    let age: Int
+}
+
+func correction(user1: User, user2: User) -> String {
+    if user1.age > user2.age {
+        return "\(user1.name) старше"
+    } else {
+        return "\(user2.name) старше"
+    }
+}
+
+let user1 = User(name: "Alex", age: 12)
+let user2 = User(name: "Max", age: 10)
+let ageCorrection = correction(user1: user1, user2: user2)
+print(ageCorrection)
