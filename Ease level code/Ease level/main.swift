@@ -62,7 +62,42 @@ myArray.insert(100, at: 3)
 myArray.remove(at: 3)
 myArray.removeFirst()
 myArray.removeLast()
+myArray.reverse()
 print(myArray)
 
+//8
+var nameAges = ["Ivan": 30, "Alex": 35, "Dmitriy":30]
+let nameAgesNew = nameAges.updateValue(40, forKey: "Ivan")
 
+//9
+var mySet: Set = [1,2,3,4] //1,2,3,4
+mySet.insert(5) //1,2,3,4,5
+mySet.insert(5) //1,2,3,4,5 (Нет изменений)
+
+//9
+func someFinc (one:Int, two:Int){
+    let one = 1
+    let two = 3
+    guard one == two else {return}
+    
+}
+
+//10
+
+let totalScore = 10
+switch totalScore {
+case 1...10:
+    print("So bad")
+case 10...20:
+    print("Better")
+case 20...90:
+    print("Next time")
+case 90...100:
+    print("Bingo")
+default:
+    break
+    
+}
+
+//11
 
