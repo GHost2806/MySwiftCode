@@ -131,3 +131,18 @@ func correction(firstUser: User, secondUser: User) {
 }
 
 correction(firstUser: user1, secondUser: user2)
+
+//14
+
+let s = 10
+let g = 12
+
+func numCor (numOne:Int, numTwo:Int) {
+    if numOne>numTwo {
+        print("\(numOne) больше")
+    } else {
+        print("\(numTwo) больше")
+    }
+}
+
+numCor(numOne: s, numTwo: g)
