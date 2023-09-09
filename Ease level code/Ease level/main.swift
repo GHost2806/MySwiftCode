@@ -146,3 +146,32 @@ func numCor (numOne:Int, numTwo:Int) {
 }
 
 numCor(numOne: s, numTwo: g)
+
+//15 sruct, switch, func
+struct CompanyEmployee {
+    let name: String
+    let age: Int
+    let expAge: Int
+}
+
+let employees = [
+    CompanyEmployee(name: "Alex", age: 32, expAge: 8),
+    CompanyEmployee(name: "Diana", age: 22, expAge: 2),
+    CompanyEmployee(name: "Radmir", age: 28, expAge: 10)
+]
+
+func calcEmployeesAverSell(employee1: CompanyEmployee, employee2: CompanyEmployee, employee3: CompanyEmployee) {
+    switch (employee1.expAge, employee2.expAge, employee3.expAge) {
+    case let (exp1, exp2, exp3) where exp1 > exp2 && exp1 > exp3:
+        print("\(employee1.name) работает дольше всех")
+    case let (exp1, exp2, exp3) where exp2 > exp1 && exp2 > exp3:
+        print("\(employee2.name) работает дольше всех")
+    case let (exp1, exp2, exp3) where exp3 > exp1 && exp3 > exp2:
+        print("\(employee3.name) работает дольше всех")
+    default:
+        print("Все сотрудники работают одинаково долго")
+    }
+}
+
+calcEmployeesAverSell(employee1: employees[0], employee2: employees[1], employee3: employees[2])
+
