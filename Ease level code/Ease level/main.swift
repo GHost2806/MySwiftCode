@@ -175,3 +175,20 @@ func calcEmployeesAverSell(employee1: CompanyEmployee, employee2: CompanyEmploye
 
 calcEmployeesAverSell(employee1: employees[0], employee2: employees[1], employee3: employees[2])
 
+//16 for in
+struct MyCompanyEmployee {
+    let name: String
+    let finger: Int
+}
+
+let carpenters = [
+    MyCompanyEmployee(name: "Dmitriy", finger: 20),
+    MyCompanyEmployee(name: "Diana", finger: 15),
+    MyCompanyEmployee(name: "Alex", finger: 19)
+]
+
+for employee in carpenters {
+    print("\(employee.name) с \(employee.finger) пальцами")
+}
+
+
