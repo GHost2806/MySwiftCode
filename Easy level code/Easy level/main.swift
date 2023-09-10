@@ -53,7 +53,7 @@ if let ageString = readLine(), let userAge = Int(ageString) {
     print("Введён неккорректный формат возраста.")
 }
 
-//7 Array
+//7 Array Массивы
 var myArray = [1,2,3,4,5]
 print(myArray[2])
 myArray.count
@@ -191,7 +191,7 @@ for employee in carpenters {
     print("\(employee.name) с \(employee.finger) пальцами")
 }
 
-//17 closure
+//17 closure Замыкания
 let closure = {
     print("Hello world")
 }
@@ -221,4 +221,20 @@ let sortedArray = unsortedArray.sorted {
     return Number1 < Number2
 }
 print(sortedArray)
+
+//20 tuples Кортеджи
+let agesAndNames = ["Misha": 20, "Alex": 30, "Dmitro": 45]
+var ageIn = 0
+var nameIn = ""
+
+for (nameInD, ageInD) in agesAndNames {
+    if ageInD > ageIn {
+        ageIn = ageInD
+        nameIn = nameInD
+    }
+}
+
+print("Maximum Age: \(ageIn)")
+print("Corresponding Name: \(nameIn)")
+
 
