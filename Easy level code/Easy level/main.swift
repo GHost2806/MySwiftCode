@@ -191,4 +191,34 @@ for employee in carpenters {
     print("\(employee.name) с \(employee.finger) пальцами")
 }
 
+//17 closure
+let closure = {
+    print("Hello world")
+}
+func printText1 (closure1: () -> ()) {
+    for _ in 0...3 {
+        closure()
+        }
+    }
+
+printText1 (closure1: closure)
+
+//18 closure
+func printText (closure1: () -> ()) {
+    for _ in 0...3 {
+        closure1()
+        }
+    }
+
+printText {() -> () in
+    print("Hello world")
+}
+
+//19 closure
+let unsortedArray = [1, 44, 67, 4, 139, 9, 22]
+let sortedArray = unsortedArray.sorted {
+(Number1:Int, Number2:Int) -> Bool in
+    return Number1 < Number2
+}
+print(sortedArray)
 

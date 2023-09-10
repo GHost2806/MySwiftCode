@@ -41,7 +41,7 @@
 		D031E30F2AAA0C10004B594C = {
 			isa = PBXGroup;
 			children = (
-				D031E31A2AAA0C10004B594C /* Ease level */,
+				D031E31A2AAA0C10004B594C /* Easy level */,
 				D031E3192AAA0C10004B594C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D031E31A2AAA0C10004B594C /* Ease level */ = {
+		D031E31A2AAA0C10004B594C /* Easy level */ = {
 			isa = PBXGroup;
 			children = (
 				D031E31B2AAA0C10004B594C /* main.swift */,
 			);
-			path = "Ease level";
+			path = "Easy level";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "Ease level" */;
+			buildConfigurationList = D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "Easy level" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -265,7 +265,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "Ease level" */ = {
+		D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "Easy level" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D031E31D2AAA0C10004B594C /* Debug */,
