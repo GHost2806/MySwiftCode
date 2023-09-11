@@ -292,8 +292,28 @@ class SomeCompany {
 SomeCompany.listofFiredWorkers(workers: firedWorkers)
 SomeCompany.listOfHiredWorkers(workers: hiredWorkers)
 
+//22 Наследование
 
-
+class Human {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+    func tellAboutMe() -> String {
+        return "Привет, меня зовут \(name)."
+    }
+}
+class Child: Human {
+    var toy = "Horse"
+    override func tellAboutMe() -> String {
+        let originalText = super.tellAboutMe()
+        return originalText + "И у меня есть игрушка \(self.toy)"
+    }
+    init(toy: String, name: String) {
+        self.toy = toy
+        super.init(name: name)
+    }
+}
 
 
 
