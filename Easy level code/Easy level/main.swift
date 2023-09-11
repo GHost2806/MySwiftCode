@@ -237,6 +237,66 @@ for (nameInD, ageInD) in agesAndNames {
 print("Maximum Age: \(ageIn)")
 print("Corresponding Name: \(nameIn)")
 
+//21
+class SomeCompany {
+    var name: String
+    var jobTitle: String
+    
+    init(name: String, jobTitle: String) {
+        self.name = name
+        self.jobTitle = jobTitle
+    }
+    
+    static func listofFiredWorkers(workers: [Workers]) {
+        print("Список уволенных сотрудников из компании \(myCompanyName.name):")
+        for worker in workers {
+            print("Имя: \(worker.name), Возраст: \(worker.age)")
+        }
+    }
+    static func listOfHiredWorkers(workers:[Workers]){
+        print("Список нанятых сотрудников в компанию \(myCompanyName.name):")
+        for worker in workers {
+            print("Имя: \(worker.name), Возраст: \(worker.age)")
+        }
+    }
+        
+        func firedWorker(workerName: String) {
+            print("Сотрудник \(workerName) уволен из компании \(myCompanyName.name).")
+        }
+        
+        func hiredWorker(workerName: String) {
+            print("Сотрудник \(workerName) взят на работу в компаниию \(myCompanyName.name).")
+        }
+
+}
+    
+    struct Workers {
+        var name: String
+        var age: Int
+    }
+    
+    let myCompanyName = SomeCompany(name: "Astra", jobTitle: "Programmer")
+    
+    var firedWorkers = [
+        Workers(name: "Alex", age: 18),
+        Workers(name: "Dmitriy", age: 23),
+        Workers(name: "Diana", age: 22)
+    ]
+    
+    var hiredWorkers = [
+        Workers(name: "Alehandro", age: 33),
+        Workers(name: "Viktor", age: 27),
+        Workers(name: "Maria", age: 32)
+    ]
+
+SomeCompany.listofFiredWorkers(workers: firedWorkers)
+SomeCompany.listOfHiredWorkers(workers: hiredWorkers)
+
+
+
+
+
+
 
 
 
