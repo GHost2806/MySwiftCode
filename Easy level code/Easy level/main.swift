@@ -237,7 +237,7 @@ for (nameInD, ageInD) in agesAndNames {
 print("Maximum Age: \(ageIn)")
 print("Corresponding Name: \(nameIn)")
 
-//21
+//21 Class
 class SomeCompany {
     var name: String
     var jobTitle: String
