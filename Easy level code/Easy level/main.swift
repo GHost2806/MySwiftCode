@@ -315,8 +315,52 @@ class Child: Human {
     }
 }
 
+//23 Вычисляемые свойства
 
+class Rectangular {
+    let height: Int
+    let width: Int
+    let depth: Int
+    
+    var volume: Int {
+        return height * width * depth
+    }
+    
+    init(height: Int, width: Int, depth: Int) {
+        self.height = height
+        self.width = width
+        self.depth = depth
+    }
+    
+}
 
+let rect = Rectangular(height: 10, width: 12, depth: 13)
+print(rect.volume)
 
+//24
 
+//class Person {
+//    var name:String
+//    var lastName: String
+//
+//    init(name: String, lastName: String) {
+//        self.name = name
+//        self.lastName = lastName
+//    }
+//
+//    var fullName: String {
+//        get {
+//            return name + " " + lastName
+//        }
+//        set(anotherNewValue) {
+//            let array = anotherNewValue.components(separatedBy: " ")
+//            name = array[0]
+//            lastName = array[1]
+//        }
+//    }
+//}
+//
+//let personOne = Person(name: "Alex", lastName: "Evdakimov")
+//print(personOne.fullName)
 
+//25
