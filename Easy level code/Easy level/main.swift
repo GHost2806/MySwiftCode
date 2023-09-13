@@ -364,3 +364,33 @@ print(rect.volume)
 //print(personOne.fullName)
 
 //25
+class Car {
+    let products: Int
+    let people:  Int
+    let pets: Int
+    class var selfWeight: Int {return 1500}
+    class var maxWeight: Int {return 2000}
+    
+    var totalWeight: Int {
+        return products + people + pets + Car.selfWeight
+    }
+    
+    init(products: Int, people: Int, pets: Int) {
+        self.products = products
+        self.people = people
+        self.pets = pets
+    }
+}
+
+let car = Car(products: 30, people: 300, pets: 50)
+let maxWeight = Car.maxWeight
+let carWeight = Car.selfWeight
+let totalWeight = car.totalWeight
+if maxWeight < totalWeight {
+    print("Машина перегруженна на: \(totalWeight-maxWeight)кг.")
+} else {
+    print("Машина готова к поездке.")
+}
+
+//26 Lazy Ленивые процессы
+
