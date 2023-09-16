@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D031E31C2AAA0C10004B594C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031E31B2AAA0C10004B594C /* main.swift */; };
+		D031E31C2AAA0C10004B594C /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031E31B2AAA0C10004B594C /* All.swift */; };
+		D09282672AB613F4009EC0DC /* Constants and Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09282662AB613F4009EC0DC /* Constants and Variables.swift */; };
+		D09282692AB614C8009EC0DC /* Branching.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09282682AB614C8009EC0DC /* Branching.swift */; };
+		D092826B2AB6176C009EC0DC /* Array and Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092826A2AB6176C009EC0DC /* Array and Guard.swift */; };
+		D092826D2AB617ED009EC0DC /* Сycles, structs, functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092826C2AB617ED009EC0DC /* Сycles, structs, functions.swift */; };
+		D092826F2AB6194E009EC0DC /* Closure and tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092826E2AB6194E009EC0DC /* Closure and tuples.swift */; };
+		D09282712AB61A01009EC0DC /* Class, Inheritance, Computed Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09282702AB61A01009EC0DC /* Class, Inheritance, Computed Properties.swift */; };
+		D09282732AB61A7F009EC0DC /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09282722AB61A7F009EC0DC /* Lazy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +31,14 @@
 
 /* Begin PBXFileReference section */
 		D031E3182AAA0C10004B594C /* Ease level */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Ease level"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D031E31B2AAA0C10004B594C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D031E31B2AAA0C10004B594C /* All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
+		D09282662AB613F4009EC0DC /* Constants and Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants and Variables.swift"; sourceTree = "<group>"; };
+		D09282682AB614C8009EC0DC /* Branching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branching.swift; sourceTree = "<group>"; };
+		D092826A2AB6176C009EC0DC /* Array and Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array and Guard.swift"; sourceTree = "<group>"; };
+		D092826C2AB617ED009EC0DC /* Сycles, structs, functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сycles, structs, functions.swift"; sourceTree = "<group>"; };
+		D092826E2AB6194E009EC0DC /* Closure and tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Closure and tuples.swift"; sourceTree = "<group>"; };
+		D09282702AB61A01009EC0DC /* Class, Inheritance, Computed Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class, Inheritance, Computed Properties.swift"; sourceTree = "<group>"; };
+		D09282722AB61A7F009EC0DC /* Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +55,7 @@
 		D031E30F2AAA0C10004B594C = {
 			isa = PBXGroup;
 			children = (
-				D031E31A2AAA0C10004B594C /* Easy level */,
+				D031E31A2AAA0C10004B594C /* MySwiftKnowledge */,
 				D031E3192AAA0C10004B594C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +68,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D031E31A2AAA0C10004B594C /* Easy level */ = {
+		D031E31A2AAA0C10004B594C /* MySwiftKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				D031E31B2AAA0C10004B594C /* main.swift */,
+				D031E31B2AAA0C10004B594C /* All.swift */,
+				D092826E2AB6194E009EC0DC /* Closure and tuples.swift */,
+				D092826C2AB617ED009EC0DC /* Сycles, structs, functions.swift */,
+				D09282682AB614C8009EC0DC /* Branching.swift */,
+				D09282662AB613F4009EC0DC /* Constants and Variables.swift */,
+				D092826A2AB6176C009EC0DC /* Array and Guard.swift */,
+				D09282702AB61A01009EC0DC /* Class, Inheritance, Computed Properties.swift */,
+				D09282722AB61A7F009EC0DC /* Lazy.swift */,
 			);
-			path = "Easy level";
+			path = MySwiftKnowledge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "Easy level" */;
+			buildConfigurationList = D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "MySwiftKnowledge" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +141,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D031E31C2AAA0C10004B594C /* main.swift in Sources */,
+				D031E31C2AAA0C10004B594C /* All.swift in Sources */,
+				D092826D2AB617ED009EC0DC /* Сycles, structs, functions.swift in Sources */,
+				D092826B2AB6176C009EC0DC /* Array and Guard.swift in Sources */,
+				D09282692AB614C8009EC0DC /* Branching.swift in Sources */,
+				D092826F2AB6194E009EC0DC /* Closure and tuples.swift in Sources */,
+				D09282732AB61A7F009EC0DC /* Lazy.swift in Sources */,
+				D09282712AB61A01009EC0DC /* Class, Inheritance, Computed Properties.swift in Sources */,
+				D09282672AB613F4009EC0DC /* Constants and Variables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +293,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "Easy level" */ = {
+		D031E3132AAA0C10004B594C /* Build configuration list for PBXProject "MySwiftKnowledge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D031E31D2AAA0C10004B594C /* Debug */,
